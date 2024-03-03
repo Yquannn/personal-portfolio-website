@@ -12,6 +12,7 @@ h1{
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 #home{
   background-color:  #121617;
