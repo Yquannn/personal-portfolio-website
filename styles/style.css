@@ -690,7 +690,7 @@ textarea {
   resize: vertical;
 }
 
-button {
+.contact-btn {
   background-color: #81ecec;
   color: black;
   border: none;
@@ -701,6 +701,6 @@ button {
 
 }
 
-button:hover {
+.contact-btn:hover {
   background-color: #53eded;
 }
