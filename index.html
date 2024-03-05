@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="styles/style.css">
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('DjUj4GL7WAS9O-KDn')
+</script>
 </head>
 <body>
   <!-- <div class="wrapper"> -->
@@ -41,10 +47,9 @@
             </div>
       
             <div class="socialMedia-contact">
-              <a href=""> <img src="icon/github (2).png" alt="github"></a>
-              <a href=""> <img src="icon/linkedin (1).png" alt="linkedin"></a>
-              <a href=""> <img src="icon/facebook (1).png" alt="facebook"></a>
-              <a href=""> <img src="icon/gmail.png" alt="email"></a>
+              <a target="_blank" href="https://github.com/Yquannn"> <img src="icon/github (2).png" alt="github"></a>
+              <a target="_blank" href href="https://www.linkedin.com/in/dondon-bautista-1866b1263/"> <img src="icon/linkedin (1).png" alt="linkedin"></a>
+              <a target="_blank" href href="https://www.facebook.com/profile.php?id=100084146108731"> <img src="icon/facebook (1).png" alt="facebook"></a>
             </div>
           </div>
           </div> 
@@ -57,6 +62,7 @@
 
     <section id="education-aboutme">
       <!-- <p class="heading-p">Explore My</p> -->
+      <p class="heading-p">Explore</p>
       <h1 class="headings">About me</h1>
       <div class="aboutme-container">
           <p><span class="aboutme-tag">Location: </span>Batangas City</p>
@@ -312,17 +318,40 @@
     </section>
 
     <section id="contact">
-
-    </section>
+      <p class="heading-p">Send me</p>
+      <h1 class="headings">An Email</h1>
+      <form id="form">
+        <div class="container-contact">
+  
+          <div class="field">
+            <label for="from_name">Your Name</label>
+            <input type="text" name="from_name" id="from_name" placeholder="Enter your name" required>
+          </div>
+          <div class="field">
+            <label for="email_id">Recipient Email</label>
+            <input type="email" name="email_id" id="email_id" placeholder="Enter recipient's email" required>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Enter your message" rows="5" required></textarea>
+          </div>
+        
+          <button type="submit" id="button">Send Email</button>
+        </div>
+      </form>
+      
+      </section>
+      
     
 
 
 
 
 
-<!--     
-  </div> -->
+
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script src="anmation.js"></script>
+
+
 </body>
 </html>
