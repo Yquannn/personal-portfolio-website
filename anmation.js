@@ -17,5 +17,3 @@ document.querySelectorAll(".header-icon").forEach(n => n.
     hamburger_menu.classList.remove('active');
   }))
 
-
-  

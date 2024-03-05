@@ -41,13 +41,13 @@ h3{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 100;
   background-color: #121617;
   padding: 16px;
+  position: fixed;
 }
 
 .header ul {
@@ -98,6 +98,10 @@ h3{
 .aboutme {
   color: #898080;
   font-size: 16px; 
+}
+
+.content-container{
+  margin-top: -10rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -397,7 +401,7 @@ p{
   .experience{
     grid-template-columns: 1fr;
     display: inline-block;
-    margin: 30px;
+    margin: 50px;
   }
   .experience-container{
     grid-template-columns: 1fr;
@@ -509,4 +513,47 @@ iframe{
   height: 40px;
   width: 40px;
   border-radius: 50%;
+}
+
+
+@media (max-width: 1500px){
+
+  .project-item{
+    display: inline-block;
+    width: 24rem;
+    height: 40rem;
+    margin: 68px;
+
+  }
+  iframe{
+    border-radius: 16px;
+    width: 24rem;
+  }
+  .project-container{
+    display: flex;
+    justify-content: center;
+ 
+  }
+
+}
+
+@media (max-width: 1320px){
+  .project-item{
+    display: block;
+    justify-content: center;
+
+  }
+}
+
+@media (max-width: 423px){
+  .project-item{
+    width: 18rem;
+    height: 45rem;
+    display: block;
+  }
+  iframe{
+    border-radius: 16px;
+    width: 18rem;
+  }
+
 }
