@@ -16,3 +16,6 @@ document.querySelectorAll(".header-icon").forEach(n => n.
   addEventListener("click", ()=>{
     hamburger_menu.classList.remove('active');
   }))
+
+
+  
