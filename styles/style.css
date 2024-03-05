@@ -6,6 +6,9 @@ p, a, div{
   color: white;
 }
 
+*{
+  margin: 0;
+}
 h1{
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -23,23 +26,28 @@ body {
   margin: 20px;
   font-size: 22px;
   font-weight: bold;
+  color: white;
 }
+
 a{
   text-decoration: none;
 }
 
-
+h3{
+  color: black;
+  line-height: 36px;
+}
 .nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 100;
   background-color: #121617;
   padding: 16px;
+  position: fixed;
 }
 
 .header ul {
@@ -90,6 +98,10 @@ a{
 .aboutme {
   color: #898080;
   font-size: 16px; 
+}
+
+.content-container{
+  margin-top: -10rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -154,7 +166,6 @@ a{
   justify-content: center;
   align-items: center;
   height: 1000px;
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -265,7 +276,7 @@ a{
 
 
 #Experiences {
-  height: 650px;
+  height: 600px;
   display: inline-block;
   align-items: center;
   width: 100%;
@@ -289,19 +300,46 @@ p{
   font-size: 50px;
   color: black;
   text-align: center;
+  margin: 20px;
 }
 
+#education-aboutme{
+  height: 30vh;
+}
+
+.aboutme-container{
+  text-align: center;
+  margin: 50px;
+}
+.aboutme-container p{
+  color: black;
+ 
+  font-size: 20px;
+}
+.aboutme-tag{
+  color: #898080;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+
+
 .experience-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
   gap: 2rem;
   margin: 50px;
+
+
 }
 
 .experience-box {
   border: 1px solid rgb(0, 0, 0);
   border-radius: 30px;
-  /* padding: 24px; */
+  width: 500px;
+
+  
 }
 
 .experience-box h2 {
@@ -311,8 +349,9 @@ p{
 
 .experience {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px;
+
 }
 
 .ex-div {
@@ -326,49 +365,193 @@ p{
   margin: 14px;
 }
 
-@media(max-width: 1100px){
+/* @media(max-width: 1100px){
   #Experiences{
     height: 1000px;
   }
   .experience-container{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 1620px){
   .experience-container{
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr;
   }
+  #Experiences{
+    height: 800px;
+  }
+} */
 
-}
-
-@media (max-width: 1120px){
+/* @media (max-width: 1120px){
   .experience-container{
     grid-template-columns: 1fr;
   }
-
-}
-@media (max-width: 700px){
   #Experiences{
     height: 1000px;
   }
-  .experience{
-    grid-template-columns: 1fr 1fr;
 
+} */
+@media (max-width: 700px){
+  #Experiences{
+    height: 700px;
+  }
+  .experience-box h2{
+    margin: 10px;
+  }
+  .experience{
+    grid-template-columns: 1fr;
+    display: inline-block;
+    margin: 50px;
   }
   .experience-container{
     grid-template-columns: 1fr;
   }
-  .container-Aboutme{
-    margin-top: -15rem;
-    height: 600px;
-
-  }
-
 
 }
 
+
 #project{
-  height: 1000px;
-  display: inline-block;
+  height: 100vh;
   width: 100%;
+}
+
+.project-container{
+  display: flex;
+  justify-content: center; 
+  height: 100vh; 
+
+}
+
+
+.project-item{
+  background-color: #efeeee;
+  padding: 70px;
+  width: 70rem;
+  height: 300px;
+  border-radius: 16px;
+  overflow: hidden; 
+  display: flex;
+  margin-top: 50px;
+
+  /* border: 1px solid black; */
+}
+.project-item h3{
+  color: black;
+  margin-left: 16px;
+  font-size: 28px;
+  font-family: serif;
+
+
+}
+.project-info{
+  line-height: 20px;
+}
+
+.project-item p, a{
+  color: black;
+  margin-left: 16px;
+}
+iframe{
+  border-radius: 16px;
+  width: 45rem;
+  height: 350px;
+  display: inline-block;
+}
+
+.video-container{
+  width: 70%;
+}
+.technology-use{
+  display: flex;
+  margin-left: 20px;
+}
+
+.technology-item{
+  margin-top: 30px;
+  margin-right: 30px;
+  background-color: #d8d8d8;
+  padding: 2px; 
+  border-radius: 16px;
+  font-size: 12px;
+}
+
+.discription{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 16px;
+  margin: 10px;
+  color: #898080;
+}
+.technology-item p{
+  margin: 6px;
+}
+
+.source-code-container{
+  display: flex;
+  margin-top: 30px;
+  margin-left: 4px;
+
+}
+
+.code-link{
+  background-color: black;
+  padding-top: 13px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 8px;
+  color: white;
+}
+
+.code-link:hover{
+  background-color: #81ecec;
+  color: black;
+  transition:  0.15s,  0.30s;
+
+}
+.github-icon{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+
+@media (max-width: 1500px){
+
+  .project-item{
+    display: inline-block;
+    width: 24rem;
+    height: 40rem;
+    margin: 68px;
+
+  }
+  iframe{
+    border-radius: 16px;
+    width: 24rem;
+  }
+  .project-container{
+    display: flex;
+    justify-content: center;
+ 
+  }
+
+}
+
+@media (max-width: 1320px){
+  .project-item{
+    display: block;
+    justify-content: center;
+
+  }
+}
+
+@media (max-width: 423px){
+  .project-item{
+    width: 18rem;
+    height: 45rem;
+    display: block;
+  }
+  iframe{
+    border-radius: 16px;
+    width: 18rem;
+  }
+
 }
