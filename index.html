@@ -335,16 +335,19 @@
           <div class="container-contact">
             <div class="contact-wrapper">
               <h5 class="title-row">CONTACT ME</h5>
-              <div class="field">
-                <input type="text" name="from_name" id="from_name" placeholder="Enter your name" required>
-              </div>
-              <div class="field">
-                <input type="email" name="email_id" id="email_id" placeholder="Enter your email" required>
-              </div>
-              <div class="field">
-                <textarea name="message" id="message" placeholder="Enter your message" rows="5" required></textarea>
-              </div>
-              <button class="contact-btn" type="submit" id="button">Send Email</button>
+              <form id="form" action="form">
+                <div class="field">
+                  <input type="text" name="from_name" id="from_name" placeholder="Enter your name" required>
+                </div>
+                <div class="field">
+                  <input type="email" name="email_id" id="email_id" placeholder="Enter your email" required>
+                </div>
+                <div class="field">
+                  <textarea name="message" id="message" placeholder="Enter your message" rows="5" required></textarea>
+                </div>
+                <button class="contact-btn" type="submit" id="button">Send Email</button>
+              </form>
+            
             </div>    
           </div>
       </footer>
