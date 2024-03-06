@@ -21,7 +21,6 @@ document.querySelector(".nav-menu").addEventListener("click", () => {
 });
 
 
-
 const btn = document.getElementById('button');
 const form = document.getElementById('form');
 
@@ -30,7 +29,7 @@ form.addEventListener('submit', function(event) {
 
   btn.value = 'Sending...';
 
-  const serviceID = 'default_service';
+  const serviceID = 'service_1e4fj8h';
   const templateID = 'template_tox677s';
 
   emailjs.sendForm(serviceID, templateID, this)
