@@ -42,10 +42,9 @@
           <div class="aboutme">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ea, dolorum blanditiis maiores alias molestiae harum recusandae debitis quis beatae perferendis, officiis dignissimos temporibus obcaecati consectetur repellat officia error asperiores!</div>
           <div class="contact-container">
             <div class="btn-hire-downloadCv">
-              <button class="downloadCv">Download Cv</button>
-              <button class="contactMe">Contact me</button>
+              <a  class="downloadCv">Download Cv</a>
+              <a href="#footer" class="contactMe">Contact me</a>
             </div>
-      
             <div class="socialMedia-contact">
               <a target="_blank" href="https://github.com/Yquannn"> <img src="icon/github (2).png" alt="github"></a>
               <a target="_blank" href href="https://www.linkedin.com/in/dondon-bautista-1866b1263/"> <img src="icon/linkedin (1).png" alt="linkedin"></a>
@@ -59,7 +58,6 @@
         </div> 
       </div>
     </section>
-
     <section id="education-aboutme">
       <!-- <p class="heading-p">Explore My</p> -->
       <p class="heading-p">Explore</p>
@@ -70,7 +68,6 @@
           <p><span class="aboutme-tag">School: </span>Westmead International School</p>
       </div>
     </section>
-
       <section id="Experiences">
         <p class="heading-p">Explore My</p>
         <h1 class="headings">Experience</h1>
@@ -85,7 +82,6 @@
                   <p>Experienced</p>
                 </div>
               </div>
-    
               <div class="ex-div">
                 <img class="icon1" src="icon/tick.png" alt="">
                 <div>
@@ -93,7 +89,6 @@
                   <p>Basic</p>
                 </div>
               </div>
-    
               <div class="ex-div">
                 <img class="icon1" src="icon/tick.png" alt="">
                 <div>
@@ -101,7 +96,6 @@
                   <p>Intermediate</p>
                 </div>
               </div>
-    
               <div class="ex-div">
                 <img class="icon1" src="icon/tick.png" alt="">
                 <div>
@@ -111,7 +105,6 @@
               </div>
             </div>
           </div>
-       
             <div class="experience-box">
               <h2>Back-end Development</h2>
               <div class="experience">
@@ -160,10 +153,8 @@
               </div>
             </div>
         </div>
-        </div> 
+      </div> 
     </section>  
-         
-
     <section id="project">
           <p class="heading-p">Explore My</p>
           <h1 class="headings">Projects</h1>
@@ -215,7 +206,6 @@
                     <a href="https://github.com/Yquannn/Inventory-Management-System" target="_blank"> <img  class="github-icon" src="icon/github (2).png" alt="github"></a>
                   </div>
                 </div>
-
               </div>
               <div class="project-item">
                 <div class="video-container">
@@ -238,8 +228,7 @@
                     <a href="https://github.com/Yquannn/THE-GUESSING-GAME" target="_blank"> <img  class="github-icon" src="icon/github (2).png" alt="github"></a>
                   </div>
                 </div>
-              </div>
-              
+              </div>      
               <div class="project-item">
                 <div class="video-container">
                   <iframe width="400" height="315" src="https://www.youtube.com/embed/nSN1X7RIteY?si=tWzzvReB_ax7tFIJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -289,7 +278,6 @@
                     <a href="" target="_blank"> <img  class="github-icon" src="icon/github (2).png" alt="github"></a>
                   </div>
                 </div>
-
               </div>
               <div class="project-item">
                 <div class="video-container">
@@ -316,42 +304,51 @@
             </div>
           </div>
     </section>
-
-    <section id="contact">
-      <p class="heading-p">Send me</p>
-      <h1 class="headings">An Email</h1>
-      <form id="form">
-        <div class="container-contact">
-  
-          <div class="field">
-            <label for="from_name">Your Name</label>
-            <input type="text" name="from_name" id="from_name" placeholder="Enter your name" required>
+      <footer id="footer">
+          <div class="footer-grid">
+            <div class="row-group">
+                <h5 class="title-row">SOLUTIONS</h5>
+                <p>Explanation AI</p>
+                <p>ML Monitoring</p>
+                <p>About me</p>
+              </div>
+            <div class="row-group">
+              <h5 class="title-row">USE CASES</h5>
+              <p>Fraud</p>
+              <p>Churn Detection</p>
+              <p>Underwriting</p>
+            </div>
+            <div class="row-group">
+                <h5 class="title-row">RESOURCES</h5>
+                <p>Resources hub</p>
+                <p>Blog</p>
+                <p>Learn More</p>
+              </div>
+            <div class="row-group">
+              <h5 class="title-row">COMPANY</h5>
+              <p>Careers</p>
+              <p>Events</p>
+              <p>Privacy Policy</p>
+              </div>
+          </div> 
           </div>
-          <div class="field">
-            <label for="email_id">Recipient Email</label>
-            <input type="email" name="email_id" id="email_id" placeholder="Enter recipient's email" required>
+          <div class="container-contact">
+            <div class="contact-wrapper">
+              <h5 class="title-row">CONTACT ME</h5>
+              <div class="field">
+                <input type="text" name="from_name" id="from_name" placeholder="Enter your name" required>
+              </div>
+              <div class="field">
+                <input type="email" name="email_id" id="email_id" placeholder="Enter your email" required>
+              </div>
+              <div class="field">
+                <textarea name="message" id="message" placeholder="Enter your message" rows="5" required></textarea>
+              </div>
+              <button class="contact-btn" type="submit" id="button">Send Email</button>
+            </div>    
           </div>
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" placeholder="Enter your message" rows="5" required></textarea>
-          </div>
-        
-          <button class="contact-btn" type="submit" id="button">Send Email</button>
-        </div>
-      </form>
-      
-      </section>
-      
-    
-
-
-
-
-
-
+      </footer>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script src="anmation.js"></script>
-
-
 </body>
 </html>
