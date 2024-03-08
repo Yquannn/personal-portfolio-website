@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/mobile-responsive.css">
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('DjUj4GL7WAS9O-KDn')
+</script>
 </head>
 <body>
   <!-- <div class="wrapper"> -->
@@ -34,19 +41,12 @@
             <h1 class="greetings">Hi, I'm <span class="name"></span></h1>
            <div> <span class="job-position">Full stack Developer</span></div>
           <div class="aboutme">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ea, dolorum blanditiis maiores alias molestiae harum recusandae debitis quis beatae perferendis, officiis dignissimos temporibus obcaecati consectetur repellat officia error asperiores!</div>
-          <div class="contact-container">
+          <!-- <div class="contact-container"> -->
             <div class="btn-hire-downloadCv">
-              <button class="downloadCv">Download Cv</button>
-              <button class="contactMe">Contact me</button>
+              <a  class="downloadCv">Download Cv</a>
+              <a href="#footer" class="contactMe">Contact me</a>
             </div>
-      
-            <div class="socialMedia-contact">
-              <a href=""> <img src="icon/github (2).png" alt="github"></a>
-              <a href=""> <img src="icon/linkedin (1).png" alt="linkedin"></a>
-              <a href=""> <img src="icon/facebook (1).png" alt="facebook"></a>
-              <a href=""> <img src="icon/gmail.png" alt="email"></a>
-            </div>
-          </div>
+          <!-- </div> -->
           </div> 
           <div class="myProfile">
             <img class="myPic" src="img/mypic.jpg" alt="">
@@ -54,18 +54,59 @@
         </div> 
       </div>
     </section>
-
     <section id="education-aboutme">
       <!-- <p class="heading-p">Explore My</p> -->
+      <p class="heading-p">Explore</p>
       <h1 class="headings">About me</h1>
-      <div class="aboutme-container">
-          <p><span class="aboutme-tag">Location: </span>Batangas City</p>
-          <p><span class="aboutme-tag">Education: </span>Bachelor of Science in Information Technology</p>
-          <p><span class="aboutme-tag">School: </span>Westmead International School</p>
+      <div class="timeline">
+        <div class="timeline-container left-container">
+          <img src="icon/graduate.png" alt="">
+          <div class="textbox">
+            <h3>Ambulong Elementary School.</h4>
+            <small>2018-2019</small>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id voluptatibus similique animi, excepturi illo atque fugiat necessitatibus eveniet architecto maiores recusandae ipsum ad, itaque molestias ipsa dolor quam eaque fugit.</p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </div>
+        <div class="timeline-container right-container">
+          <img src="icon/graduate.png" alt="">
+          <div class="textbox">
+            <h3>Tabangao Integrated School, Css major</h4>
+            <small>2018-2019</small>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id voluptatibus similique animi, excepturi illo atque fugiat necessitatibus eveniet architecto maiores recusandae ipsum ad, itaque molestias ipsa dolor quam eaque fugit.</p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </div>
+        <div class="timeline-container left-container">
+          <img src="icon/graduate.png" alt="">
+          <div class="textbox">
+            <h3>Golden Gate Colleges, ICT major</h4>
+            <small>2018-2019</small>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id voluptatibus similique animi, excepturi illo atque fugiat necessitatibus eveniet architecto maiores recusandae ipsum ad, itaque molestias ipsa dolor quam eaque fugit.</p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </div>
+        <div class="timeline-container right-container">
+          <img src="icon/graduate.png" alt="">
+          <div class="textbox">
+            <h3>Tabangao Integrated School, ICT major </h4>
+            <small>2018-2019</small>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id voluptatibus similique animi, excepturi illo atque fugiat necessitatibus eveniet architecto maiores recusandae ipsum ad, itaque molestias ipsa dolor quam eaque fugit.</p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </div>
+        <div class="timeline-container left-container">
+          <img src="icon/graduate.png" alt="">
+          <div class="textbox">
+            <h3>Westmead International School, BS Information Technology</h4>
+            <small>2018-2019</small>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id voluptatibus similique animi, excepturi illo atque fugiat necessitatibus eveniet architecto maiores recusandae ipsum ad, itaque molestias ipsa dolor quam eaque fugit.</p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </div>
       </div>
     </section>
-
-      <section id="Experiences">
+      <section id=" ">
         <p class="heading-p">Explore My</p>
         <h1 class="headings">Experience</h1>
         <div class="container experience-container">
@@ -79,7 +120,6 @@
                   <p>Experienced</p>
                 </div>
               </div>
-    
               <div class="ex-div">
                 <img class="icon1" src="icon/tick.png" alt="">
                 <div>
@@ -87,7 +127,6 @@
                   <p>Basic</p>
                 </div>
               </div>
-    
               <div class="ex-div">
                 <img class="icon1" src="icon/tick.png" alt="">
                 <div>
@@ -95,7 +134,6 @@
                   <p>Intermediate</p>
                 </div>
               </div>
-    
               <div class="ex-div">
                 <img class="icon1" src="icon/tick.png" alt="">
                 <div>
@@ -103,9 +141,15 @@
                   <p>Basic</p>
                 </div>
               </div>
+              <div class="ex-div">
+                <img class="icon1" src="icon/tick.png" alt="">
+                <div>
+                  <h4>Tailwind</h4>
+                  <p>Familiar</p>
+                </div>
+              </div>
             </div>
           </div>
-       
             <div class="experience-box">
               <h2>Back-end Development</h2>
               <div class="experience">
@@ -151,42 +195,37 @@
                     <p>Basic</p>
                   </div>
                 </div>
+                <div class="ex-div">
+                  <img class="icon1" src="icon/tick.png" alt="">
+                  <div>
+                    <h4>Api's</h4>
+                    <p>Familliar</p>
+                  </div>
+                </div>
+                <div class="ex-div">
+                  <img class="icon1" src="icon/tick.png" alt="">
+                  <div>
+                      <h4>Ajax</h4>
+                      <p>Familliar</p>
+                  </div>
+                </div>
+                <div class="ex-div">
+                  <img class="icon1" src="icon/tick.png" alt="">
+                  <div>
+                    <h4>Asp.net</h4>
+                    <p>Basic</p>
+                  </div>
+                </div>
               </div>
             </div>
         </div>
-        </div> 
-    </section>
-        
-
+      </div> 
+    </section>  
     <section id="project">
           <p class="heading-p">Explore My</p>
           <h1 class="headings">Projects</h1>
           <div class="project-container"> 
             <div class="project-grid">
-              <div class="project-item">
-                <div class="video-container">
-                  <iframe width="400" height="315" src="https://www.youtube.com/embed/nSN1X7RIteY?si=tWzzvReB_ax7tFIJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-
-                <div class="project-info">
-                  <h3>Calculator</h3>
-                  <p>discription</p>
-                  <p class="discription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla quisquam, est architecto dolores enim fuga mollitia nam esse tenetur corrupti molestias autem sed aperiam ab. Maxime laudantium doloremque ipsam nisi.</p>
-                  <div class="technology-use">
-                    <div class="technology-item">
-                      <p>Visual Basic</p>
-                    </div>
-                    <div class="technology-item">
-                      <p>.Net</p>
-                    </div>
-                  </div>
-                  <div class="source-code-container">
-                    <a href="" class="code-link" target="_blank">Visit Code</a>
-                    <a href="" target="_blank"> <img  class="github-icon" src="icon/github (2).png" alt="github"></a>
-                  </div>
-                </div>
-        
-              </div>
               <div class="project-item">
                 <div class="video-container">
                   <iframe width="400" height="315" src="https://www.youtube.com/embed/yiFZgt9i2AM?si=kxzaVJ6CH6MD7AQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -207,13 +246,11 @@
                     </div>
                   </div>
                   <div class="source-code-container">
-                    <a href="" class="code-link" target="_blank">Visit Code</a>
-                    <a href="" target="_blank"> <img  class="github-icon" src="icon/github (2).png" alt="github"></a>
-                  </div>
-                  
+                    <a href="https://github.com/Yquannn/Room-Services-Management-System" class="code-link" target="_blank">Visit Code</a>
+                    <a href="https://github.com/Yquannn/Room-Services-Management-System" target="_blank"> <img  class="github-icon" src="icon/github.png" alt="github"></a>
+                  </div>  
                 </div>
-                
-              </div>
+              </div>  
               <div class="project-item">
                 <div class="video-container">
                   <iframe width="400" height="315" src="https://www.youtube.com/embed/DoGEhjts5cM?si=kVKad5H2LFDu5CNv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -221,7 +258,7 @@
                 <div class="project-info">
                   <h3>Printing Shop  Management System</h3>
                   <p class="discription">Developed using Visual basic and mysql/sql. This system can monitor total income of the company etc. I developed this when i was 2nd year college</p>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
                   <div class="technology-use">
                     <div class="technology-item">
                       <p>Visual Basic</p>
@@ -231,11 +268,10 @@
                     </div>
                   </div>
                   <div class="source-code-container">
-                    <a href="" class="code-link" target="_blank">Visit Code</a>
-                    <a href="" target="_blank"> <img  class="github-icon" src="icon/github (2).png" alt="github"></a>
+                    <a href="https://github.com/Yquannn/Inventory-Management-System" class="code-link" target="_blank">Visit Code</a>
+                    <a href="https://github.com/Yquannn/Inventory-Management-System" target="_blank"> <img  class="github-icon" src="icon/github.png" alt="github"></a>
                   </div>
                 </div>
-
               </div>
               <div class="project-item">
                 <div class="video-container">
@@ -244,7 +280,29 @@
                 <div class="project-info">
                   <h3>The Game Boy</h3>
                   <p class="discription">Here's my first game ever, i developed this when i was 1st year college</p>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla quisquam, est architecto dolores enim fuga mollitia nam esse tenetur corrupti molestias autem sed aperiam ab. Maxime laudantium doloremque ipsam nisi.</p>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                  <div class="technology-use">
+                    <div class="technology-item">
+                      <p>Visual Basic</p>
+                    </div>
+                    <div class="technology-item">
+                      <p>.Net</p>
+                    </div>
+                  </div>
+                  <div class="source-code-container">
+                    <a href="https://github.com/Yquannn/THE-GUESSING-GAME" class="code-link" target="_blank">Visit Code</a>
+                    <a href="https://github.com/Yquannn/THE-GUESSING-GAME" target="_blank"> <img  class="github-icon" src="icon/github.png" alt="github"></a>
+                  </div>
+                </div>
+              </div>      
+              <div class="project-item">
+                <div class="video-container">
+                  <iframe width="400" height="315" src="https://www.youtube.com/embed/nSN1X7RIteY?si=tWzzvReB_ax7tFIJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="project-info">
+                  <h3>Calculator</h3>
+                  <p  class="discription">discription</p>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                   <div class="technology-use">
                     <div class="technology-item">
                       <p>Visual Basic</p>
@@ -255,11 +313,9 @@
                   </div>
                   <div class="source-code-container">
                     <a href="" class="code-link" target="_blank">Visit Code</a>
-                    <a href="" target="_blank"> <img  class="github-icon" src="icon/github (2).png" alt="github"></a>
+                    <a href="" target="_blank"> <img  class="github-icon" src="icon/github.png" alt="github"></a>
                   </div>
                 </div>
-
-
               </div>
               <div class="project-item">
                 <div class="video-container">
@@ -268,7 +324,7 @@
                 <div class="project-info">
                   <h3>Banking Managemet System</h3>
                   <p class="discription">This system allow user to deposit withdraw and check the receipt</p>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla quisquam, est architecto dolores enim fuga mollitia nam esse tenetur corrupti molestias autem sed aperiam ab. Maxime laudantium doloremque ipsam nisi.</p>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
                   <div class="technology-use">
                     <div class="technology-item">
                       <p>php</p>
@@ -285,10 +341,9 @@
                   </div>
                   <div class="source-code-container">
                     <a href="" class="code-link" target="_blank">Visit Code</a>
-                    <a href="" target="_blank"> <img  class="github-icon" src="icon/github (2).png" alt="github"></a>
+                    <a href="" target="_blank"> <img  class="github-icon" src="icon/github.png" alt="github"></a>
                   </div>
                 </div>
-
               </div>
               <div class="project-item">
                 <div class="video-container">
@@ -297,7 +352,7 @@
                  <div class="project-info">
                   <h3>Instagram Clone</h3>
                   <p class="discription">Cloning instagram using html css</p>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla quisquam, est architecto dolores enim fuga mollitia nam esse tenetur corrupti molestias autem sed aperiam ab. Maxime laudantium doloremque ipsam nisi.</p>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                   <div class="technology-use">
                     <div class="technology-item">
                       <p>Html</p>
@@ -307,24 +362,93 @@
                     </div>
                   </div>
                   <div class="source-code-container">
-                    <a href="" class="code-link" target="_blank">Visit Code</a>
-                    <a href="" target="_blank"> <img  class="github-icon" src="icon/github (2).png" alt="github"></a>
+                    <a href="https://github.com/Yquannn/instagram-clone" class="code-link" target="_blank">Visit Code</a>
+                    <a href="https://github.com/Yquannn/instagram-clone" target="_blank"> <img  class="github-icon" src="icon/github.png" alt="github"></a>
                   </div>
                 </div>
+                
               </div>
+              <div class="project-item">
+                <div class="video-container">
+                    <a target="_blank" href="https://yquannn.github.io/pokemonGame/">
+                        <img class="project-thumbnail" src="img/pokemonn.jpg" alt="" title="Play me!">
+                    </a>
+                </div>
+                <div class="project-info">
+                    <h3>Pokemon game</h3>
+                    <p class="description">Pokemon using ajax and html</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <div class="technology-use">
+                        <div class="technology-item">
+                            <p>Html</p>
+                        </div>
+                        <div class="technology-item">
+                            <p>Ajax</p>
+                        </div>
+                    </div>
+                    <div class="source-code-container">
+                        <a href="https://github.com/Yquannn/instagram-clone" class="code-link" target="_blank">Visit Code</a>
+                        <a href="https://github.com/Yquannn/instagram-clone" target="_blank"> <img  class="github-icon" src="icon/github.png" alt="github"></a>
+                    </div>
+                </div>
+            </div>
+            
             </div>
           </div>
     </section>
-
-    
-    
-
-
-
-
-
-<!--     
-  </div> -->
+      <footer id="footer">
+          <div class="footer-grid">
+            <div class="row-group">
+                <h5 class="title-row">SOLUTIONS</h5>
+                <p>Explanation</p>
+                <p>ML Monitoring</p>
+                <p>About me</p>
+              </div>
+            <div class="row-group">
+              <h5 class="title-row">USE CASES</h5>
+              <p>Fraud</p>
+              <p>Churn Detection</p>
+              <p>Underwriting</p>
+            </div>
+            <div class="row-group">
+                <h5 class="title-row">RESOURCES</h5>
+                <p>Resources hub</p>
+                <p>Blog</p>
+                <p>Learn More</p>
+              </div>
+            <div class="row-group">
+              <h5 class="title-row">COMPANY</h5>
+              <p>Careers</p>
+              <p>Events</p>
+              <p>Privacy Policy</p>
+              </div>
+          </div> 
+          </div>
+          <div class="container-contact">
+            <div class="contact-wrapper">
+              <h5 class="title-row">CONTACT ME</h5>
+              <form id="form" action="form">
+                <div class="field">
+                  <input type="text" name="from_name" id="from_name" placeholder="Enter your name" required>
+                </div>
+                <div class="field">
+                  <input type="email" name="email_id" id="email_id" placeholder="Enter your email" required>
+                </div>
+                <div class="field">
+                  <textarea name="message" id="message" placeholder="Enter your message" rows="5" required></textarea>
+                </div>
+                <button class="contact-btn" type="submit" id="button">Send Email</button>
+              </form>
+            
+            </div>    
+          </div>
+          <div class="socialMedia-contact">
+            <a target="_blank" href="https://github.com/Yquannn"> <img src="icon/github (2).png" alt="github"></a>
+            <a target="_blank" href href="https://www.linkedin.com/in/dondon-bautista-1866b1263/"> <img src="icon/linkedin (1).png" alt="linkedin"></a>
+            <a target="_blank" href href="https://www.facebook.com/profile.php?id=100084146108731"> <img src="icon/facebook (1).png" alt="facebook"></a>
+            <a target="_blank" href="https://www.tiktok.com/@yquannnnn"> <img src="icon/tiktok2.png" alt="tiktok"></a>
+          </div>
+      </footer>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script src="anmation.js"></script>
 </body>
