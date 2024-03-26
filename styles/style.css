@@ -363,7 +363,10 @@ h3{
 }
 
 #Experiences {
+<<<<<<< HEAD
   /* height: 100vh; */
+=======
+>>>>>>> dd5a622750d7e298d7047c051ad6cbbb66d2b5f9
   display: block;
   /* align-items: center; */
   width: 100%;
@@ -643,5 +646,9 @@ textarea {
   height: 350px;
   display: inline-block;
   margin-left: -15px;
+<<<<<<< HEAD
   filter: brightness(70%);
 }
+=======
+}
+>>>>>>> dd5a622750d7e298d7047c051ad6cbbb66d2b5f9
