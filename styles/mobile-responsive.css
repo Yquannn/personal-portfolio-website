@@ -43,18 +43,20 @@
     justify-content: center;
 
   }
-  /* .project-thumbnail{
-    width: 100%;
-  } */
+  .project-thumbnail{
+
+    height: 100%;
+  }
+
 
   .project-container {
     display: flex;
     justify-content: center;
-
+    height: 100vh;
   }
 
   .project-item {
-    max-height: 100vh;
+    max-height:200vh;
     max-width: 600px;
     display: block;
     margin: 0 auto;
@@ -383,7 +385,6 @@
   .project-item {
     max-height: 100vh;
     max-width: 300px;
-
   }
 
 
