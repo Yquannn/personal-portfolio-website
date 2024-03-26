@@ -37,6 +37,7 @@ h1{
 
 body {
   margin: 0;
+
 }
 
 #home{
@@ -414,6 +415,7 @@ p{
 .experience-box {
   box-shadow: 1px 1px 15px rgb(0, 0, 0, 0.15);
   border-radius: 30px;
+
 }
 
 .experience-box h2 {
