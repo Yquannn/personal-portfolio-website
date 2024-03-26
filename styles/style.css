@@ -121,6 +121,7 @@ h3{
 .aboutme {
   color: #898080;
   font-size: 16px; 
+  line-height: 22px;
 }
 .timeline {
   position: relative;
@@ -253,7 +254,7 @@ h3{
 }
 
 .content-container{
-  margin-top: -10rem;
+  /* margin-top: -10rem; */
 }
 
 
@@ -362,12 +363,12 @@ h3{
 }
 
 #Experiences {
-  height: 100vh;
+  /* height: 100vh; */
   display: block;
   /* align-items: center; */
   width: 100%;
   justify-content: center;
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
 }
 
 h4, h2{
@@ -444,14 +445,14 @@ p{
 .project-container{
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  /* margin-top: 80px; */
 }
 
 .project-item{
   /* background-color: #efeeee; */
   border-radius: 16px;
   display: flex; 
-  width: 70rem;
+  max-width: 72rem;
   margin: 4rem;
   box-shadow: 1px 1px 15px rgb(0, 0, 0, 0.15);
 }
@@ -604,7 +605,7 @@ textarea {
 
 .footer-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 30px;
   place-items: center;
   margin: 0;
@@ -642,4 +643,5 @@ textarea {
   height: 350px;
   display: inline-block;
   margin-left: -15px;
+  filter: brightness(70%);
 }
