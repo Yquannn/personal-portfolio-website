@@ -363,10 +363,9 @@ h3{
 }
 
 #Experiences {
-<<<<<<< HEAD
+
   /* height: 100vh; */
-=======
->>>>>>> dd5a622750d7e298d7047c051ad6cbbb66d2b5f9
+
   display: block;
   /* align-items: center; */
   width: 100%;
@@ -448,16 +447,16 @@ p{
 .project-container{
   display: flex;
   justify-content: center;
-  /* margin-top: 80px; */
+
 }
 
 .project-item{
-  /* background-color: #efeeee; */
   border-radius: 16px;
   display: flex; 
   max-width: 72rem;
   margin: 4rem;
   box-shadow: 1px 1px 15px rgb(0, 0, 0, 0.15);
+  height: auto;
 }
 
 .project-item h3{
@@ -486,7 +485,7 @@ iframe{
 }
 
 .video-container{
-  width: 70%;
+  max-width: 100%;
 }
 .technology-use{
   display: flex;
@@ -517,6 +516,11 @@ iframe{
   display: flex;
   margin-top: 30px;
   margin-left: 4px;
+
+}
+
+.source-code-container a{
+  margin-bottom: 10px;
 }
 
 .code-link{
@@ -596,6 +600,9 @@ textarea {
   background-color: #53eded;
 }
 
+
+
+
 #footer{
   background-color:  #121617;
   width: 100%;
@@ -646,9 +653,6 @@ textarea {
   height: 350px;
   display: inline-block;
   margin-left: -15px;
-<<<<<<< HEAD
   filter: brightness(70%);
 }
-=======
-}
->>>>>>> dd5a622750d7e298d7047c051ad6cbbb66d2b5f9
+
