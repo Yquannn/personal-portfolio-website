@@ -52,7 +52,7 @@
   .project-container {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
   }
 
   .project-item {
