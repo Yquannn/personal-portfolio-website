@@ -37,29 +37,37 @@
   }
 
   .video-container {
-    width: 100%;
+    /* width: 100%; */
     height: 350px;
     display: flex;
     justify-content: center;
     overflow-x: hidden;
   }
-  .project-thumbnail{
+  /* .project-thumbnail{
     width: 100%;
-  }
+  } */
 
   .project-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+
   }
 
   .project-item {
-    width: 35rem;
-    height: 40rem;
+    width: 300px;
+    height: auto;
     display: block;
     margin: 0 auto;
     margin-top: 20px;
+    overflow: hidden;
   }
+  .technology-use{
+    width: 250px;
+
+  
+  }
+
+
 }
 
 /* Rules for screens up to 800px */
@@ -135,6 +143,13 @@
 
   .nav-menu.active {
     left: 0;
+  }
+
+
+  .project-thumbnail{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
   }
 }
 @media  screen and (max-width: 600px) {
@@ -233,9 +248,14 @@
     font-size: 12px;
     margin-right: 50px;
   }
-  .project-container{
+
+  /* .project-thumbnail {
+    max-width: 100%;
     max-height: auto;
-  }
+    overflow: hidden;
+
+} */
+
 }
 
 /* Rules for screens up to 780px */
@@ -244,13 +264,7 @@
     margin: 0;
   }
 
-  .project-item {
-    width: 25rem;
-    min-height: 30px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 50px;
-  }
+
 
   .video-container {
     width: 100%;
@@ -259,6 +273,13 @@
     justify-content: center;
     overflow-x: hidden;
   }
+
+ .project-thumbnail{
+  width: 400px;
+  height: auto;
+  margin-right: 10px;
+
+ }
 
   iframe {
     width: 100%;
@@ -317,16 +338,16 @@
     width: 250px;
   }
 
-  .project-thumbnail{
+  /* .project-thumbnail{
     width: 105%;
     height: auto;
 
-  }
+  } */
 }
 
 
 @media (max-width: 420px) {
-  #project{
+  /* #project{
     margin-top: 30px;
   }
   .experience {
@@ -344,7 +365,12 @@
   }
   .project-container{
     margin-top: -2rem;
-    overflow: hidden
-  }
+
+  } */
+
+
+
+
+
 
 }

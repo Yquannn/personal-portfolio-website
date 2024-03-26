@@ -489,7 +489,7 @@ iframe{
 }
 .technology-use{
   display: flex;
-  margin-left: 20px;
+  margin: 20px;
 }
 
 .technology-item{
@@ -651,8 +651,7 @@ textarea {
   border-radius: 16px;
   width: 45rem;
   height: 350px;
-  display: inline-block;
-  margin-left: -15px;
+  object-fit: cover;
   filter: brightness(70%);
+  margin-left: -16px;
 }
-
