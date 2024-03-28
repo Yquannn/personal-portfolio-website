@@ -52,11 +52,11 @@
   .project-container {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
   }
 
   .project-item {
-    max-height:200vh;
+    max-height: 200vh;
     max-width: 600px;
     display: block;
     margin: 0 auto;
