@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  font-family: "Source Sans 3", sans-serif;
+  box-sizing: border-box;
+}
+
+img {
+  height: 40px;
+}
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container {
+  /* box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15); */
+  padding: 20px;
+  margin-bottom: 20px;
+  width: fit-content;
+  opacity: 0; /* Start hidden */
+  animation: fadeIn 1s forwards; /* Fade in effect */
+}
+.group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent items from being seen outside container */
+}
+.items {
+  padding: 33px;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 1s forwards;
+  animation-delay: var(--animation-delay); /* Custom property for delay */
+}
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px; /* Optional: add some space between grid items */
+  }
+  .items {
+    padding: 20px;
+  }
+  img {
+    height: 30px;
+  }
+}
+#Experiences{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+  margin: 0;
+}
