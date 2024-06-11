@@ -12,6 +12,32 @@ p, a, div{
   padding: 0;
   box-sizing: border-box;
 }
+/* General animation styles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-delay {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Apply the delay based on the data-delay attribute */
+.animate-delay[data-delay] {
+  animation-delay: attr(data-delay);
+}
+
+/* Ensure the elements with animation have a default animation delay if data-delay is not supported */
+.greetings, .job-position, .aboutme, .downloadCv, .contactMe {
+  animation-delay: 0.2s;
+}
 
 
 h1{
